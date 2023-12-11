@@ -1,0 +1,32 @@
+* {
+	font-family: sans-serif;
+}
+
+body {
+	text-align: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 700%;
+	margin-bottom: 0;
+}
+
+p {
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+a {
+	color: white;
+	padding-top: 15px;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+#profilePicture {
+	border-radius: 100px;
+}

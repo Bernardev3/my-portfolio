@@ -73,13 +73,27 @@ p {
 }
 
 #profilePicture {
+	border: 2px blueviolet solid;
 	border-radius: 100px;
-	box-shadow: 0 0 13px rgb(100, 100, 100);
+	box-shadow: 0 0 15px rgb(100, 100, 100);
 	animation: sinWaveAnim 1.8s alternate infinite ease-in-out;
 }
 
-.project {
+#projectsContainer {
 	margin: auto;
+	animation: sinWaveAnim 2s alternate infinite ease-in-out;
+}
+
+#footer {
+	padding: 10px;
+	background-color: gray;
+	color: whitesmoke;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+.project {
+	height: 420px;
 	width: 400px;
 	border-radius: 10px;
 	border: 3px blueviolet solid;
@@ -87,7 +101,7 @@ p {
 	background-color: black;
 	color: white;
 	box-shadow: 0 0 30px rgb(100, 100, 100);
-	animation: sinWaveAnim 3s alternate infinite ease-in-out;
+	margin: 20px;
 }
 
 .project thead td {

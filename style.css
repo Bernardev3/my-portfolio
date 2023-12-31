@@ -31,6 +31,36 @@
 	}
 }
 
+@keyframes darkLinksAnim {
+	0% {
+		color: rgb(30, 30, 30);
+		padding-right: 10px;
+	}
+
+	50% {
+		color: whitesmoke;
+		padding-right: 50px;
+	}
+
+	100% {
+		color: rgb(30, 30, 30);
+		padding-right: 10px;
+	}
+}
+
+@keyframes projectHoverAnim {
+	from {
+		width: 400px;
+		height: 420px;
+	}
+
+	to {
+		width: 380px;
+		height: 400px;
+		margin-left: 30px;
+	}
+}
+
 * {
 	font-family: sans-serif;
 }
@@ -44,6 +74,7 @@ body {
 
 h1 {
 	font-size: 700%;
+	text-shadow: 3px 3px rgb(195, 147, 231);
 	margin-bottom: 0;
 }
 
@@ -59,11 +90,6 @@ p {
 	padding: 10px;
 }
 
-.links:hover {
-	animation-name: linksAnim;
-	animation-duration: 1s;
-}
-
 .links span {
 	margin-right: 20px;
 }
@@ -73,9 +99,9 @@ p {
 }
 
 #profilePicture {
-	border: 2px blueviolet solid;
+	border: 2px rgb(120, 52, 184) solid;
 	border-radius: 100px;
-	box-shadow: 0 0 15px rgb(100, 100, 100);
+	box-shadow: 0 0 15px rgb(144, 113, 172);
 	animation: sinWaveAnim 1.8s alternate infinite ease-in-out;
 }
 
@@ -84,28 +110,47 @@ p {
 	animation: sinWaveAnim 2s alternate infinite ease-in-out;
 }
 
+#changeModeButton {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+	background-color: rgb(172, 120, 221);
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	color: whitesmoke;
+}
+
+#changeModeButton:hover {
+	background-color: rgb(126, 87, 163);
+}
+
 #footer {
 	padding: 10px;
 	background-color: gray;
 	color: whitesmoke;
 	border-radius: 10px;
 	margin: 5px;
+	box-shadow: 0 0 15px rgb(100, 100, 100);
 }
 
 .project {
 	height: 420px;
 	width: 400px;
 	border-radius: 10px;
-	border: 3px blueviolet solid;
+	border: 3px rgb(161, 97, 218) solid;
 	padding: 15px;
 	background-color: black;
 	color: white;
-	box-shadow: 0 0 30px rgb(100, 100, 100);
+	box-shadow: 0 0 25px rgb(100, 100, 100);
 	margin: 20px;
 }
 
 .project thead td {
-	background-color: blueviolet;
+	background-color: rgb(161, 97, 218);
 	padding: 12px;
 	border-radius: 5px;
 }
@@ -118,6 +163,7 @@ p {
 	margin: 10px;
 }
 
-.project tbody img:hover {
-	background-color: rgb(220, 220, 220);
+.project:hover {
+	animation: projectHoverAnim 0.8s alternate ease-in-out infinite;
+	border: 4px rgb(112, 81, 138) solid;
 }

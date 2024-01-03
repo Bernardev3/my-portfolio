@@ -145,7 +145,7 @@ p {
 	padding: 15px;
 	background-color: black;
 	color: white;
-	box-shadow: 0 0 20px black;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 	margin: 20px;
 }
 

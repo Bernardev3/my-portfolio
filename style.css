@@ -62,7 +62,7 @@
 }
 
 * {
-	font-family: sans-serif;
+	font-family: Verdana, sans-serif;
 }
 
 body {
@@ -70,6 +70,7 @@ body {
 	align-items: center;
 	background-color: white;
 	color: rgb(30, 30, 30);
+	font-size: 85%;
 }
 
 h1 {

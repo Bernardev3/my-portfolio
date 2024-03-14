@@ -25,14 +25,14 @@
 }
 
 * {
-	font-family: Verdana, sans-serif;
+	font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
 	text-align: center;
 	align-items: center;
-	background-color: white;
-	color: rgb(30, 30, 30);
+	background-color: rgb(252, 248, 255);
+	color: rgb(30, 24, 36);
 	font-size: 85%;
 }
 
@@ -41,6 +41,7 @@ h1 {
 	text-shadow: 3px 3px rgb(195, 147, 231);
 	margin: 75px;
 	margin-bottom: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
@@ -94,7 +95,7 @@ p {
 
 #footer {
 	padding: 10px;
-	background-color: gray;
+	background-color: rgb(116, 106, 126);
 	color: whitesmoke;
 	border-radius: 10px;
 	margin: 5px;
@@ -107,7 +108,7 @@ p {
 	border-radius: 10px;
 	border: 3px rgb(161, 97, 218) solid;
 	padding: 15px;
-	background-color: black;
+	background-color: rgb(20, 14, 26);
 	color: white;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 	margin: 20px;
@@ -133,10 +134,8 @@ p {
 	opacity: 0.8;
 }
 
-#lightSource1 {
+#lightSource1, #lightSource2 {
 	position: fixed;
-	top: 0;
-	right: 0;
 	width: 125px;
 	height: 125px;
 	box-shadow: 0 0 125px blueviolet;
@@ -144,13 +143,12 @@ p {
 	background-color: rgba(137, 43, 226, 0.26);
 }
 
+#lightSource1 {
+	top: 0;
+	right: 0;
+}
+
 #lightSource2 {
-	position: fixed;
 	bottom: 0;
 	left: 0;
-	width: 125px;
-	height: 125px;
-	box-shadow: 0 0 125px blueviolet;
-	border-radius: 125px;
-	background-color: rgba(137, 43, 226, 0.26);
 }
